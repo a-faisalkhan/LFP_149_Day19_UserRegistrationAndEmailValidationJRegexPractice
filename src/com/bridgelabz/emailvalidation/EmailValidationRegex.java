@@ -14,9 +14,9 @@ public class EmailValidationRegex {
 	public static void validateEmailsList(String[] emailList) {
 
 		System.out.println("Validating all sample emails in the list");
+		String emailValidation = "^[a-zA-Z0-9]{1,}[.+-]?[a-zA-Z0-9]{1,}?[@][a-zA-Z0-9]{1,}([.][a-zA-Z]{2,}){1,}$";
 		for (int i = 0; i < emailList.length; i++) {
-			Pattern pattern = Pattern
-					.compile("^[a-zA-Z0-9]{1,}[.+-]?[a-zA-Z0-9]{1,}?[@][a-zA-Z0-9]{1,}([.][a-zA-Z]{2,}){1,}$");
+			Pattern pattern = Pattern.compile(emailValidation);
 			Matcher matcher = pattern.matcher(emailList[i]);
 			if (matcher.matches())
 				System.out.println(emailList[i] + " : This Email id is valid");

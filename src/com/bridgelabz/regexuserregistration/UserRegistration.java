@@ -6,26 +6,6 @@ import java.util.regex.Pattern;
 
 public class UserRegistration {
 
-//	public static void main(String[] args) {
-//		
-//		String firstName = "^[A-Z]{1,}[a-z]{2,}$";
-//		Pattern firstNamePattern = Pattern.compile(firstName);
-//		System.out.println("Enter the First Name : ");
-//
-//		Scanner scanner = new Scanner(System.in);
-//
-//		String firstNameInput = scanner.nextLine();
-//		Matcher matcher = firstNamePattern.matcher(firstNameInput);
-//
-//		if (matcher.matches()) {
-//			System.out.println("Valid First Name");
-//		} else {
-//			System.out.println(
-//					"Invalid input, Enter the valid First Name");
-//		}
-//		scanner.close();
-//	}
-
 	// public final String firstName = "^[A-Z]{3}[a-z]*{2,}$";
 	public final String firstName = "^[A-Z]{1}[a-z]{2,}$";
 	public final String lastName = "^[A-Z]{1}[a-z]{2,}$";
